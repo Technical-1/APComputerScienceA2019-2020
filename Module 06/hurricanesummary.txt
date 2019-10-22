@@ -1,0 +1,43 @@
+                                           Hurricanes 2003 - 2005
+Year             Hurricane              Category         Pressure (mb)      Wind speed (mph)
+2003      Claudette                        1                 979                    92.06
+2003      Danny                            1                1000                    74.80
+2003      Erika                            1                 986                    74.80
+2003      Fabian                           4                 939                   143.85
+2003      Isabel                           5                 915                   166.86
+2003      Juan                             2                 969                   103.57
+2003      Kate                             3                 952                   126.59
+2004      Alex                             3                 957                   120.83
+2004      Charley                          4                 941                   149.60
+2004      Danielle                         2                 964                   109.32
+2004      Frances                          4                 935                   143.85
+2004      Gaston                           1                 985                    74.80
+2004      Ivan                             5                 910                   166.86
+2004      Jeanne                           3                 950                   120.83
+2004      Karl                             4                 938                   143.85
+2004      Lisa                             1                 987                    74.80
+2005      Cindy                            1                 991                    74.80
+2005      Dennis                           4                 930                   149.60
+2005      Emily                            5                 929                   161.11
+2005      Irene                            2                 970                   103.57
+2005      Katrina                          5                 902                   172.62
+2005      Maria                            3                 962                   115.08
+2005      Nate                             1                 979                    92.06
+2005      Ophelia                          1                 976                    86.31
+2005      Philippe                         1                 985                    80.55
+2005      Rita                             5                 895                   178.37
+2005      Stan                             1                 977                    80.55
+2005      Vince                            1                 988                    74.80
+2005      Wilma                            5                 882                   184.12
+2005      Beta                             3                 962                   115.08
+2005      Epsilon                          1                 981                    86.31
+========================================================================================
+                                  Average: 2.7               955.4                 117.49
+                                  Minimum: 1                 882.0                  74.80
+                                  Maximum: 5                1000.0                 184.12
+Summary of Categories:
+Cat 1: 12
+Cat 2: 3
+Cat 3: 5
+Cat 4: 5
+Cat 5: 6
