@@ -1,0 +1,45 @@
+/**
+ * @purpose:Write a program that calculates the amount of carbon dioxide produced in a year from waste by a household and compare how recycling can reduce the CO2 footprint.
+ *
+ * @author Jacob Kanfer
+ * @version 12/4/2019
+ *
+ */
+import java.util.ArrayList;
+
+public class CO2FromWasteTesterV1 {
+
+    public static void main(String[] args) {
+
+        ArrayList<CO2FromWasteV1> households = new ArrayList<CO2FromWasteV1>();
+        // add households to the ArrayList
+        households.add(new CO2FromWasteV1(3, false, true, true, false));
+        households.add(new CO2FromWasteV1(4, false, true, true, false));
+        households.add(new CO2FromWasteV1(3, true, false, true, true));
+        households.add(new CO2FromWasteV1(5, true, true, false, false));
+        households.add(new CO2FromWasteV1(2, false, false, true, false));
+        households.add(new CO2FromWasteV1(1, true, true, false, true));
+
+        CO2FromWasteV1 dataRecord;
+
+        for(int index = 0; index < households.size(); index++) {
+            // invoke methods
+            dataRecord = households.get(index);
+            dataRecord.calcGrossWasteEmission();
+            dataRecord.calcWasteReduction();
+            dataRecord.calcNetWasteReduction();
+        }
+
+        System.out.println("|       |        |                                         |             Pounds of CO2             |");
+        System.out.println("|       |        |       Household Waste Recycled          |   Total    |             |     Net    |");
+        System.out.println("| Index | People |  Paper   |  Plastic |  Glass  |  Cans   |  Emission  |  Reduction  |  Emission  |");
+        System.out.println("|-------|--------|----------|----------|---------|---------|------------|-------------|------------|");
+
+
+        for(int index = 0; index < households.size(); index ++)
+        {
+            // print each household's data
+            System.out.println("    " + index + " " + households.get(index).toString());
+        }
+    }
+}

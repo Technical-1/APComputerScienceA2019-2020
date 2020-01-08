@@ -1,0 +1,38 @@
+/**
+ * author: Jacob Kanfer
+ * date: 12/11/2019
+ * purpose: calculate projectile distance
+ */
+public class KinematicsTester {
+    public static void main(String[] args) {
+
+        double speeds[] = {20, 25, 30, 35, 40, 45, 50};
+        double angles[] = {25, 30, 35, 40, 45, 50};
+        double distance[][] = new double[speeds.length][angles.length];
+
+        //set dist vals
+        for(int row = 0; row < speeds.length; row++) {
+            for(int col = 0; col < angles.length; col++) {
+                distance[row][col] =  getDist(speeds[row], angles[col]);
+            }
+        }
+
+        //print vals
+        System.out.println("                            Projectile Distance (ft)");
+        System.out.printf("%5s %10s %10s %10s %10s %10s %10s \n", "MPH", "25 deg", "30 deg", "35 deg", "40 deg", "45 deg", "50 deg");
+        for(int row = 0; row < speeds.length; row++) {
+            System.out.printf("%5s", speeds[row]);
+
+            for(int col = 0; col < angles.length; col++) {
+                System.out.printf("%10.2f", distance[row][col]);
+            }
+            System.out.println();
+        }
+    }
+
+    //method for calc distance
+    public static double getDist(double launchSpeed, double launchAngle) {
+        launchAngle = Math.toRadians(launchAngle);
+        return (Math.pow(launchSpeed, 2)*Math.sin(2*launchAngle))/9.8;
+    }
+}

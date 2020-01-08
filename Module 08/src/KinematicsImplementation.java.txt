@@ -1,0 +1,38 @@
+/**
+ * author: Jacob Kanfer
+ * date: 12/11/2019
+ * purpose: calculate projectile distance
+ */
+public class KinematicsImplementation {
+
+    private double launchSpeed;
+    private double launchAngle;
+    private double distance;
+
+    public KinematicsImplementation(double v, double theta) {
+        launchSpeed = v;
+        theta = launchAngle;
+        distance = 0;
+    }
+
+    public void setSpeed(double v) {
+        launchSpeed = v;
+    }
+
+    public void setAngle(double launchAngle) {
+        launchAngle = launchAngle;
+    }
+
+
+    public double getSpeed() {
+        return launchSpeed;
+    }
+
+    public double getAngle() {
+        return launchAngle;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+}

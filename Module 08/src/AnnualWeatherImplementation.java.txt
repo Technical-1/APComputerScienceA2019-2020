@@ -1,0 +1,77 @@
+/*@author: Jacob Kanfer
+  purpose: Write a program that models a real-world scenario.
+  date: 12/5/2019
+ */
+
+public class AnnualWeatherImplementation {
+
+    //instance variables
+    private String month;
+    private double temp;
+    private double precip;
+    private double myAverage;
+    public double myTotal = 0;
+    public double averageTotal = 0;
+
+    //constructor
+    public AnnualWeatherImplementation(String m, double t, double p) {
+        month = m;
+        temp = t;
+        precip = p;
+    }
+
+
+    //setter methods
+
+    public void setMonth(String m) {
+        month = m;
+    }
+
+    public void setTemp(double t) {
+        temp = t;
+    }
+
+    public void setPrecip(double p) {
+        precip = p;
+    }
+
+    public void calcTotalPrecip() {
+        myTotal = myTotal + precip;
+    }
+
+    public void addTemp() {
+        averageTotal = averageTotal + temp;
+    }
+
+
+    //getter methods
+
+    public String getMonth() {
+        return month;
+    }
+
+    public double getTemp() {
+        return temp;
+    }
+
+    public double getPrecip() {
+        return precip;
+    }
+
+    public double getTempAverage() { return myAverage; }
+
+    public double getTotalPrecip() { return myTotal; }
+
+    public double getAverageTotal() { return averageTotal; }
+
+
+    //toString method
+    public String toString() {
+        return String.format("%5s             %10.2f               %10.2f",
+                month,
+                temp,
+                precip
+                );
+    }
+
+}
